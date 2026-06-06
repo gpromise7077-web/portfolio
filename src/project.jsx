@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router";
+import { SiChatbot } from "react-icons/si";
+
 export default function project() {
   let navigate = useNavigate();
   return (
@@ -49,7 +51,12 @@ export default function project() {
         </div>
         <div className="project2">
           <div className="project1">
+            <SiChatbot size={"50px"} className="icon" />
             <h1 className="link1">ChatBot</h1>
+            <p className="fully">
+              A fully functioning AI chatbot that interact with users Text
+              powered by GrOQ API{" "}
+            </p>
             <button
               className="project-link"
               onClick={() => {

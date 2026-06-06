@@ -433,3 +433,10 @@ body {
   align-items: center;
   justify-content: center;
 }
+.icon {
+  color: azure;
+}
+.fully {
+  color: #727377;
+  font-family: sans-serif;
+}
