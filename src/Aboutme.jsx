@@ -86,7 +86,7 @@ export default function aboutme() {
         <div className="self">
           <p>
             self-taught front-end Developer from Nigeria.i build <br />
-            React-Apps,AI-Powered tools,and clean UI that actually <br />
+            React-Apps, AI-Powered tools, and clean UI that actually <br />
             work. Passionate about solving real problems for real <br />
             poeple_especially Africa.
           </p>

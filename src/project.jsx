@@ -52,7 +52,7 @@ export default function project() {
         <div className="project2">
           <div className="project1">
             <SiChatbot size={"50px"} className="icon" />
-            <h1 className="link1">ChatBot</h1>
+            <h1 className="link1"> MY-ChatBot</h1>
             <p className="fully">
               A fully functioning AI chatbot that interact with users Text
               powered by GrOQ API{" "}

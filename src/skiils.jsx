@@ -82,7 +82,7 @@ export default function Skiils() {
           </div>
           <div className="vs">
             <VscVscode size={"50px"} />
-            <h1>Vs code</h1>
+            <h1>VS code</h1>
           </div>
         </div>
       </div>
