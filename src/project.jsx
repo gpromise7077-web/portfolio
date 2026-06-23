@@ -8,57 +8,75 @@ export default function project() {
       {" "}
       <div>
         <div className="head">
-          <h1 className="text">My portfolio</h1>
+          <div className="port">
+            <div className="circle"></div>
+            <h1 className="text">PORTFOLIO</h1>
+          </div>
           <div className="head_li">
             <a
               onClick={() => {
                 navigate("/skill");
               }}
             >
-              Skills
+              SKILLS
             </a>
             <a
               onClick={() => {
                 navigate("/aboutme");
               }}
             >
-              About me
+              ABOUT ME
             </a>
             <a
               onClick={() => {
                 navigate("/project");
               }}
             >
-              Projects
+              PROJECTS
             </a>
             <a
               onClick={() => {
                 navigate("/contact");
               }}
             >
-              Contact
+              CONTACT
+            </a>
+            <a
+              onClick={() => {
+                navigate("/");
+              }}
+            >
+              HOME
             </a>
           </div>
-          <button
-            onClick={() => {
-              navigate("/");
-            }}
-            className="hire"
-            className="hire"
-          >
-            Home
-          </button>
+          <div className="hi">
+            <button
+              className="hire"
+              onClick={() => {
+                navigate("/contact");
+              }}
+            >
+              HIRE ME
+            </button>
+          </div>
         </div>
-        <div className="project2">
-          <div className="project1">
-            <SiChatbot size={"50px"} className="icon" />
-            <h1 className="link1"> MY-ChatBot</h1>
-            <p className="fully">
-              A fully functioning AI chatbot that interact with users Text
-              powered by GrOQ API{" "}
+        <div className="across">
+          <p>A curated project that showcase my expertise</p>
+          <div className="expert">
+            <p>across industries.</p>
+          </div>
+        </div>
+        <div className="pro-c">
+          <div className="pro-b">
+            <h1 className="pro-e"> MY-ChatBot</h1>
+            <SiChatbot size={"50px"} className="AI" />
+            <p className="pro-d">
+              A fully functioning AI chatbot that <br /> interact with users
+              Text powered by <br />
+              GrOQ API{" "}
             </p>
             <button
-              className="project-link"
+              className="pro-a"
               onClick={() => {
                 window.open(
                   "https://chat-bot-nine-lemon.vercel.app/",

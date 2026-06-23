@@ -4,56 +4,76 @@ export default function Home() {
   return (
     <div>
       <div className="head">
-        <h1 className="text">My portfolio</h1>
+        <div className="port">
+          <h1 className="text">PORTFOLIO</h1>
+        </div>
         <div className="head_li">
           <a
             onClick={() => {
               navigate("/skill");
             }}
           >
-            Skills
+            SKILLS
           </a>
           <a
             onClick={() => {
               navigate("/aboutme");
             }}
           >
-            About me
+            ABOUT ME
           </a>
           <a
             onClick={() => {
               navigate("/project");
             }}
           >
-            Projects
+            PROJECTS
           </a>
           <a
             onClick={() => {
               navigate("/contact");
             }}
           >
-            Contact
+            CONTACT
           </a>
+          <a
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            HOME
+          </a>
+        </div>
+        <div className="hi">
+          <button
+            className="hire"
+            onClick={() => {
+              navigate("/contact");
+            }}
+          >
+            HIRE ME
+          </button>
         </div>
       </div>
       <div className="remote">
         <div>
           {" "}
           <div className="ava">
+            <div className="for"></div>
             <p>Available for remote Job</p>
           </div>
           <div className="body-text">
-            <h1> i build clean</h1>
+            <h1 className="i"> i Build Clean</h1>
             <div className="fast_text">
-              <h1>fast</h1>
-              <h1 className="react_text">React</h1>
-              <h1>Web-apps.</h1>
+              <h1 className="digi">Digital Experiences.</h1>
             </div>
           </div>
           <div className="front">
             <p>
-              Front-end developer from Nigeria. I turn ideas into real products
-              <p>Available for freelance full-time Role</p>
+              I specialize in architecting high-performance web applications
+              with a focus <br /> on Fintech, E-commerce, and Enterprise SaaS.{" "}
+              <br />
+              Precision in every pixel, performance in every line.
             </p>
           </div>
           <div className="btn">
@@ -75,9 +95,22 @@ export default function Home() {
             </button>
           </div>
         </div>
-
         <div className="my-pic">
           <img src="my-pic.jpg" alt="" className="picture" />
+        </div>
+      </div>
+      <div className="years">
+        <div>
+          <h1 className="yrs">5+</h1>
+          <p className="exp">Years Experience</p>
+        </div>
+        <div>
+          <h1 className="pr">10+</h1>
+          <p className="del">projects delivered</p>
+        </div>
+        <div>
+          <h1 className="ha">25+</h1>
+          <p className="cus">Happy customers</p>
         </div>
       </div>
     </div>

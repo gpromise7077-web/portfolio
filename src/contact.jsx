@@ -2,52 +2,76 @@ import { useNavigate } from "react-router";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { CiLocationOn } from "react-icons/ci";
 export default function contact() {
   let navigate = useNavigate();
   return (
     <>
       <div>
         <div className="head">
-          <h1 className="text">My portfolio</h1>
+          <div className="port">
+            <div className="circle"></div>
+            <h1 className="text">PORTFOLIO</h1>
+          </div>
           <div className="head_li">
             <a
               onClick={() => {
                 navigate("/skill");
               }}
             >
-              Skills
+              SKILLS
             </a>
             <a
               onClick={() => {
                 navigate("/aboutme");
               }}
             >
-              About me
+              ABOUT ME
             </a>
             <a
               onClick={() => {
                 navigate("/project");
               }}
             >
-              Projects
+              PROJECTS
             </a>
             <a
               onClick={() => {
                 navigate("/contact");
               }}
             >
-              Contact
+              CONTACT
+            </a>
+            <a
+              onClick={() => {
+                navigate("/");
+              }}
+            >
+              HOME
             </a>
           </div>
-          <button
-            onClick={() => {
-              navigate("/");
-            }}
-            className="hire"
-            className="hire"
-          >
-            Home
-          </button>
+          <div className="hi">
+            <button
+              className="hire"
+              onClick={() => {
+                navigate("/contact");
+              }}
+            >
+              HIRE ME
+            </button>
+          </div>
+        </div>
+        <div className="touch">
+          <h1>Get in Touch</h1>
+          <div className="creative">
+            <p>
+              I am always open to discussing new projects, creative ideas, or{" "}
+              <br />
+              <div className="creat">
+                <p>opportunities to be part of your vision.</p>
+              </div>
+            </p>
+          </div>
         </div>
         <div className="link">
           <a
@@ -60,7 +84,6 @@ export default function contact() {
             <p className="linked">LinkedIn: godwin-promise</p>
           </a>
         </div>
-
         <div className="github">
           <a
             href="https://github.com/gpromise7077-web"
@@ -72,14 +95,9 @@ export default function contact() {
             <p className="cl">Github: gpromise7077-web</p>
           </a>
         </div>
-        <div className="align">
-          <a
-            href="mailto:gpromise7077@gmail.com"
-            style={{ textDecoration: "none", color: "inherit" }}
-          >
-            <AiOutlineMail size={"50px"} />
-            <p className="email">gpromise7077@gmail.com</p>
-          </a>
+        <div className="loca">
+          <CiLocationOn size={"50px"} />
+          <p>Location: Delta State, Nigeria</p>
         </div>
       </div>
     </>
