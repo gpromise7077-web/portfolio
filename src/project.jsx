@@ -15,7 +15,13 @@ export default function project() {
             <h1 className="text">PORTFOLIO</h1>
           </div>
           <GiHamburgerMenu
-            onClick={() => setopen(true)}
+            onClick={() => {
+              if (open === true) {
+                setopen(false);
+              } else {
+                setopen(true);
+              }
+            }}
             size={"30px"}
             className="text-white"
           />
