@@ -27,9 +27,6 @@ export default function contact() {
             size={"30px"}
             className="text-white"
           />
-          <button onClick={() => setopen(false)}>
-            <FiX size={"30px"} className="text-white" />
-          </button>
         </div>
         <div>
           {open && (

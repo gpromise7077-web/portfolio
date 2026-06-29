@@ -27,9 +27,6 @@ export default function aboutme() {
             size={"30px"}
             className="text-white"
           />
-          <button onClick={() => setopen(false)}>
-            <FiX size={"30px"} className="text-white" />
-          </button>
         </div>
         <div>
           {open && (
@@ -188,7 +185,7 @@ export default function aboutme() {
               <h1 className="possible">25+</h1>
               <p className="take">Clients</p>
             </div>
-            <div className="bg-[#1f1f20] rounded-[10px] p-15 pt-5 pb-2 text-center">
+            <div className="bg-[#1f1f20] rounded-[10px] p-15 pt-5 pb-2 pr-7 text-center">
               <h1 className="an">99%</h1>
               <p className="platform">Satisfaction</p>
             </div>

@@ -25,9 +25,6 @@ export default function project() {
             size={"30px"}
             className="text-white"
           />
-          <button onClick={() => setopen(false)}>
-            <FiX size={"30px"} className="text-white" />
-          </button>
         </div>
         <div>
           {open && (
