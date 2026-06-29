@@ -2,67 +2,82 @@ import { useNavigate } from "react-router";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { FiX } from "react-icons/fi";
 import { CiLocationOn } from "react-icons/ci";
+import { useState } from "react";
 export default function contact() {
   let navigate = useNavigate();
+  const [open, setopen] = useState(false);
   return (
     <>
       <div>
-        <div className="head">
+        <div className="flex items-center justify-between bg-[#2d2d36] rounded-[35px] p-5 mt-2 ml-2 mr-2">
           <div className="port">
-            <div className="circle"></div>
             <h1 className="text">PORTFOLIO</h1>
           </div>
-          <div className="head_li">
-            <a
-              onClick={() => {
-                navigate("/skill");
-              }}
-            >
-              SKILLS
-            </a>
-            <a
-              onClick={() => {
-                navigate("/aboutme");
-              }}
-            >
-              ABOUT ME
-            </a>
-            <a
-              onClick={() => {
-                navigate("/project");
-              }}
-            >
-              PROJECTS
-            </a>
-            <a
-              onClick={() => {
-                navigate("/contact");
-              }}
-            >
-              CONTACT
-            </a>
-            <a
-              onClick={() => {
-                navigate("/");
-              }}
-            >
-              HOME
-            </a>
-          </div>
-          <div className="hi">
-            <button
-              className="hire"
-              onClick={() => {
-                navigate("/contact");
-              }}
-            >
-              HIRE ME
-            </button>
-          </div>
+          <GiHamburgerMenu
+            onClick={() => setopen(true)}
+            size={"30px"}
+            className="text-white"
+          />
+          <button onClick={() => setopen(false)}>
+            <FiX size={"30px"} className="text-white" />
+          </button>
+        </div>
+        <div>
+          {open && (
+            <div className="flex flex-col items-center gap-2 bg-[black] border-1 border-[#251c3d] mr-5 ml-5 pt-5 pb-5 mt-3 text-[#727377] rounded-[15px]">
+              <a
+                onClick={() => {
+                  navigate("/skill");
+                }}
+              >
+                SKILLS
+              </a>
+              <a
+                onClick={() => {
+                  navigate("/aboutme");
+                }}
+              >
+                ABOUT ME
+              </a>
+              <a
+                onClick={() => {
+                  navigate("/project");
+                }}
+              >
+                PROJECTS
+              </a>
+              <a
+                onClick={() => {
+                  navigate("/contact");
+                }}
+              >
+                CONTACT
+              </a>
+              <a
+                onClick={() => {
+                  navigate("/");
+                }}
+              >
+                HOME
+              </a>
+              <div className="flex items-center bg-[#a186f1] pl-10 pr-10 rounded-[5px]">
+                <button
+                  className="hire"
+                  onClick={() => {
+                    navigate("/contact");
+                  }}
+                >
+                  HIRE ME
+                </button>
+              </div>
+            </div>
+          )}
         </div>
         <div className="touch">
-          <h1>Get in Touch</h1>
+          <h1 className="open">Get in Touch</h1>
           <div className="creative">
             <p>
               I am always open to discussing new projects, creative ideas, or{" "}
